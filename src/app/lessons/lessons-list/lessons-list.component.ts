@@ -6,6 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./lessons-list.component.scss']
 })
 export class LessonsListComponent {
+  @Input() title;
   @Input() lessons;
   @Output() selected = new EventEmitter();
 }
