@@ -10,6 +10,7 @@
         (click)="selected.emit(course)">
         <h3 matLine>{{course.title}}</h3>
         <p matLine>{{course.description}}</p>
+        <p matLine>{{ course.percentComplete }}</p>
         <button mat-icon-button color="warn"
           (click)="deleted.emit(course.id);$event.stopImmediatePropagation()">
           <mat-icon>delete</mat-icon>
